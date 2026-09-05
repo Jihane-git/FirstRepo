@@ -1,6 +1,6 @@
 const prompt = require("prompt-sync")();
 // Somme des Éléments //
-/* 
+/*
 let number = parseInt(prompt("entrez votre number : "));
 let result = 0;
 let tab = []
@@ -40,7 +40,7 @@ for (let i = 2; i <= number; i++) {
     }
 
 }
-console.log(min) 
+console.log(min)
 */
 // Multiplication des Éléments //
 /*
@@ -57,7 +57,7 @@ for (let i = 0; i < nombre; i++) {
 }
 console.log(tab2)
 */
-// Tableau en Ordre Croissant // 
+// Tableau en Ordre Croissant //
 /*
 let number = parseInt(prompt("entrez votre number : "));
 let tab = []
@@ -70,8 +70,8 @@ for (let i = 1; i <= number; i++) {
 
 for (let i = 0; i < tab.length; i++) {
 
-    for (let k = 1; k < tab.length; k++) {
-        if (tab[i] <= tab[k]) {
+    for (let k = i+1; k < tab.length; k++) {
+        if (tab[i] > tab[k]) {
             let x = tab[i];
             tab[i] = tab[k];
             tab[k] = x;
@@ -79,7 +79,8 @@ for (let i = 0; i < tab.length; i++) {
     }
 }
 
-console.log(tab) 
+console.log(tab)
+
 */
 // Inversion d'un Tableau //
 /*
@@ -91,12 +92,12 @@ for (let i = 0; i < number; i++) {
     let element = parseInt(prompt(`entrez le ${1} number`))
     tab.push(element)
 }
-for (let i = number - 1; i >= 0; i--) { 
+for (let i = number - 1; i >= 0; i--) {
     inverse.push(tab[i])
 }
 
 console.log(tab)
-console.log(inverse) 
+console.log(inverse)
 */
 // Rechercher un Élément //
 /*
@@ -115,7 +116,7 @@ for (let i = 0; i < number; i++) {
         result = true;
         break;
     }
-} 
+}
 
 if (result) {
     console.log(" l'élément est présent")
@@ -154,7 +155,7 @@ for (let i = 0; i <= number; i++) {
     if (tab[i] % 2 === 0) {
         console.log(`les elements paires du tableau:` + tab[i])
     }
-    
+
 }
 */
 //  Afficher les Éléments Impairs //
@@ -186,7 +187,7 @@ for (let i = 1; i <= number; i++) {
 console.log(somme)
 let moyenne = somme / number;
 console.log(tab)
-console.log(moyenne) 
+console.log(moyenne)
 
 */
 // Fusion de Deux Tableaux // 
@@ -210,3 +211,5 @@ Tab.push(...tab2)
 
 console.log(Tab)
 */
+
+
